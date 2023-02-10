@@ -26,7 +26,9 @@ soundEffect1 = minim.loadFile("../Sound Effects/Wood_Door_Open_and_Close_Series.
   //song.loop(0);
 } //End setup
 //
-void draw() {} //End draw
+void draw() {
+  if ( firstMouseclick == true )
+} //End draw
 //
 void keyPressed() {
   //
@@ -37,6 +39,7 @@ void keyPressed() {
 //
 void mousePressed() {
   soundEffect1.rewind();
+  if ( firstMouseclick==false ) firstMouseclick = true;
 } //End mousePressed
 //
 //End MAIN Program
