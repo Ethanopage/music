@@ -33,5 +33,10 @@ void keyPressed() {
   if ( key=='Q' || key=='q' ) exit();
   //
   soundEffect1.play();
-} //End 
+} //End keyPressed
 //
+void mousePressed() {
+  soundEffect1.rewind();
+} //End mousePressed
+//
+//End MAIN Program
