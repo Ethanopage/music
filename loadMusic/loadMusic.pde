@@ -8,6 +8,13 @@ void loadMusic() {
   String grooveFileName = "groove.mp3";
   String eurekaFleName = "Eureka.mp3";
   String competitionFileName = "Beat_Your_Competition.mp3"; 
+  String cyclesFileName = "Cycles.mp3";
+  String ghostFileName = "Ghost_Walk.mp3";
+  String newsRoomFileName = "Newsroom.mp3";
+  String enginesFileName = "Start_Your_Engines.mp3";
+  String simplestFileName = "The_Simplest.mp3";
+  String stingFileName = "The_Simplest_Sting.mp3";
+  String closeDoorFileName = "Wood_Door_Open_and_Close_Series.mp3";
   song0 = minim.loadFile("../Music/groove.mp3");
   song1 = minim.loadFile("../Music/Eureka.mp3");
   song2 = minim.loadFile("../Music/Beat_Your_Competition.mp3");
@@ -18,4 +25,6 @@ void loadMusic() {
   song7 = minim.loadFile("../Music/The_Simplest.mp3");
   soundEffect0 = minim.loadFile("../Sound Effects/The_Simplest_Sting.mp3");
   soundEffect1 = minim.loadFile("../Sound Effects/Wood_Door_Open_and_Close_Series.mp3");
+  //
+  //println("Music Pathway is", musicPathway);
 }//End loadMusic
