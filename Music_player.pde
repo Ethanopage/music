@@ -45,4 +45,17 @@ void draw() {
 void keypressed() {
   //
   //Play sound effect when pressing a key, including delay
-  soundE
+  soundEffects[0].play();
+  soundEffects[0].rewind();
+  delay(4000); //milliseconds read from draw() println() debugging 
+  //println( "KeyPressed:", soundEffects[0].length() );
+  //
+  keyPressedShortCuts();
+  //
+} //End KeyPressed
+//
+void mousePressed() {
+  if ( activateWindow==false ) ativateWindow = true;
+} //End mousePressed
+//
+//End MAIN Program

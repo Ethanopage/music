@@ -7,15 +7,43 @@ void keyPressedShortCuts() {
 //
 void musicShortCuts() {
   //Key Board Short Cuts for Music, use numbers
-  //Hint: notice human numbering v. computer numbering9
-  if ( key == '1' ) song0.loop(0); //.rewind() is included in .loop()
-  if ( key == '2' ) song1.loop(0);
-  if ( key == '3' ) song2.loop(0);
-  if ( key == '4' ) song3.loop(0);
-  if ( key == '5' ) song4.loop(0);
-  if ( key == '6' ) song5.loop(0);
-  if ( key == '7' ) song6.loop(0);
-  if ( key == '8' ) song7.loop(0);
+  //Hint: notice human numbering vs. computer numbering9
+  //Note: if(key=='1' )song0.loop(0); will chnage to array & index introduction
+  if ( key == '1' ) song[0].loop(0); //.rewind() is included in .loop()
+  if ( key == '2' ) song[1].loop(0);
+  if ( key == '3' ) song[2].loop(0);
+  if ( key == '4' ) song[3].loop(0);
+  if ( key == '5' ) song[4].loop(0);
+  if ( key == '6' ) song[5].loop(0);
+  if ( key == '7' ) song[6].loop(0);
+  if ( key == '8' ) song[7].loop(0);
+  //
+  //Students to make these smarter 
+  //Seperated into single songs and multiple songs
+  //
+  if ( key == 'P' || key=='p' ) playPause(); //teacher started
+  //Note: for this Auto Play to Work, song must be playing
+  if ( key == 'U' || key=='u' ) autoPlay(); //teacher started
+  if ( key == 'M' || key=='m' ) mute(); //teacher started
+  if ( key == 'S' || key=='s' ) stopSong(); //teacher started
+  if ( key == 'F' || key=='f' ) fastFoward(); //teacher started
+  if ( key == 'R' || key=='r' ) fastRewind(); //teacher started
+  if ( key == 'N' || key=='n' ) nextSong(); //pseuedo code only
+  if ( key == 'B' || key=='b' ) previousSong(); //pseuedo code only
+  if ( key == 'L' || key=='l' ) loopSong() //loops current song infinitely
+  if ( key == 'O' || key=='o' ) loopPlaylist(); //entire playlist
+  if ( key == 'W' || key=='w' ) shufflePlaylist(); //suffle
+  if ( key == 'E' || key=='e' ) loopAndShuffle(); //loop and Shuffle
+}//End musicShortCuts
+//
+void quitButtons() {
+  //Quit Button Key Board Shortcuts
+  if ( key == 'Q' || key == 'q' ) {
+    quitButtonCode();
+  }
+  if
+    
+  
 }//End musicShortCuts
 //
 void quitButtons() {
