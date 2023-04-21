@@ -41,7 +41,29 @@ void quitButtons() {
   if ( key == 'Q' || key == 'q' ) {
     quitButtonCode();
   }
-  if
+  if ( key == CODED && keyCode == ESC ) {
+    quitButtonCode();
+  }//End Quit Buttons
+}//End quitButtons
+//
+void quitButtonCode() {
+  soundEffects[1].loop(0); //only need partial file, use .play(int millis)
+  //Visual Image or Text of Goodbye
+  delay(3000); //alternate way of playing sound once
+  exit();
+}//End quitButtonCode
+//
+/* Note: must define a difference between auto play and loop playlist
+*/
+void autoPlay() {
+  //Note: plays one song, then the next automatically 
+  //Asks the computer if a song is playing, continually
+  //When current song finishes, it rewinds current song and plays the next song
+  //
+  /*ERROR: autoplay never stops the song if it is enabled 
+  - once the song stops, or by presssing STOP
+  - next song will start
+  - might even start the next song
     
   
 }//End musicShortCuts
