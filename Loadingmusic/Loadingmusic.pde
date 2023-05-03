@@ -25,3 +25,7 @@ void setup() {
   char dereferencer = '.';
   String fileExstension = "mp3";
   //
+  String soundPathway = upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + FreeWare_Music;
+  String musicPathway = soundPathway + fslash + MusicDownload;
+  String soundEffectPathway = soundPathway   
+  
