@@ -1,8 +1,21 @@
-Music_groove.mp3
-The_Simplest.mp3
-Start_Your_Engines.mp3
-Newsroom.mp3
-Ghost_Walk.mp3
-Eureka.mp3
-Cycles.mp3
-Beat_Your_Competition.mp3
+//Global Variables 
+Minim minim;
+int numberOfSongs = 1; //Depends on number of files
+AudioPlayer song0; //Computer Numbering, not human numbering
+int numberOfSoundEffects = 2;
+AudioPlayer soundEffect0, soundEffect;
+//
+void musicLoadSetup() {
+  char fslash = '/';
+  String upFolder = "..";
+  String FreeWare_Music = "FreeWare Music";
+  String MusicDownload = "MusicDownload"; 
+  String SoundEffect = "SoundEffect";
+  String groove = "groove";
+  String CarDoorClosing = "CarDoorClosing";
+  String The_Simplest_Sting = "The_Simplest_Sting";
+  char dereferencer = '.';
+  String fileExtension = "mp3";
+  //
+  String soundPathway = upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + FreeWare_Music;
+  String
