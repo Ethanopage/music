@@ -18,4 +18,19 @@ void musicLoadSetup() {
   String fileExtension = "mp3";
   //
   String soundPathway = upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + upFolder + fslash + FreeWare_Music;
-  String
+  String musicPathway = soundPathway + fslash + MusicDownload;
+  String soundEffectPathway = soundPathway + fslash + soundEffect;
+  //Inspect Variable
+  println (musicPathway);
+  println (soundEffectPathway)
+  //
+  minim = new Minim(this); //load from data directory, loadfile should also load from project folder, like loadImage 
+  //
+  //Building Global Variables from Local Varibales, some imformation does not need to be remembered 
+  song0 = minim.loadFile( musicPathway + fslash + groove + dereferencer + fileExtension ); //able to pass absolute path, file name & extension, and URL
+  soundEffect0 = minim.loadFile( soundEffectPathway + fslash + CarDoorClosing + dereferencer + fileExtension );
+  soundEffect1 = minim.loadFile( soundEffectPathway + fslash + The_Simplest_Sting + dereferencer + fileExtension );
+  //
+} // End Music Load in Setup
+//
+//End Music Subprogram
