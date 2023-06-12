@@ -24,4 +24,13 @@ void musicLoadSetup() {
   println (musicPathway);
   println (soundEfffectPathway);
   //
-  minim = new Minim(this); //load from data
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  //
+  //Building Global Variables from Local Variables, some information does not need to be remembered 
+  song0 = minim.loadFile( musicPathway + fslash + groove + dereferencer + fileExtension ); //able to pass absolute path, file name & extension, and URL
+  soundEffect0 = minim.loadFile( soundEffectPathway + fslash + CarDoorClosing + dereferencer + fileExtension );
+  soundEffect1 = minim.loadFile( soundEffectPathway + fslash + The_Simplest_Sting + dereferencer + fileExtension );
+  //
+} //End Music Load in Setup
+//
+// End Music Subprogram 
